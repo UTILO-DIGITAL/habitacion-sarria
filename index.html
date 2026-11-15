@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Habitación en Sarrià</title>
+<meta name="description" content="Habitación con baño privado y terraza en Sarrià, en un piso para dos. Entrada el 1 de enero. 700 €/mes + gastos.">
+<meta property="og:title" content="Habitación con baño privado y terraza en Sarrià">
+<meta property="og:description" content="Piso para dos · entrada 1 de enero · 700 €/mes + gastos">
+<meta property="og:image" content="fotos/t2.jpg">
+<meta property="og:type" content="website">
+<style>*,*::before,*::after{box-sizing:border-box}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Nunito:wght@400;500;700&display=swap">
+<style>
+/* Layout: ficha en una columna con la identidad de Utilo — marfil de fondo, verde azulado para bloques, un solo coral (el botón de WhatsApp), amarillo solo en subrayados */
+:root{
+  --ivory:#FFFCF7; --teal:#0E8A7A; --teal-dark:#0B6E61; --night:#1C2B26;
+  --peach:#FFE9D2; --coral:#FF5A3C; --sun:#FFC845;
+  --display:"Fredoka","Trebuchet MS",system-ui,sans-serif;
+  --body:"Nunito","Trebuchet MS",system-ui,sans-serif;
+  color-scheme:light;
+}
+body{background:var(--ivory);color:var(--night);font-family:var(--body);font-size:17px;line-height:1.55}
+.wrap{max-width:900px;margin:0 auto;padding-block:28px 64px;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));
+  display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:var(--display);font-weight:500;margin:0;text-wrap:balance;color:var(--night)}
+h1{font-size:clamp(34px,6.4vw,54px);line-height:1.1}
+h2{font-size:clamp(26px,4vw,34px);line-height:1.15}
+h3{font-size:21px;line-height:1.2}
+.u{border-bottom:6px solid var(--sun);padding-bottom:1px}
+.label{font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-dark);margin:0}
+p{margin:0}
+button{font:inherit}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+
+/* Portada */
+.top{display:flex;flex-direction:column;gap:24px}
+.intro{display:flex;flex-direction:column;gap:12px}
+.lead{font-size:19px;max-width:56ch}
+.cover{all:unset;cursor:zoom-in;display:block;border-radius:20px;overflow:hidden;aspect-ratio:3/2;max-width:100%;background:var(--peach)}
+.cover img{width:100%;height:100%;object-fit:cover;display:block}
+.facts{background:var(--peach);border-radius:20px;padding:8px 28px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:40px}
+.fact{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid rgba(28,43,38,.35);min-width:0}
+.fact:nth-last-child(-n+2){border-bottom:0}
+.fact span{font-weight:700}
+.fact b{font-family:var(--display);font-weight:500;font-size:26px;color:var(--teal);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.fact b small{font-family:var(--body);font-size:15px;font-weight:500;color:var(--night)}
+@media (max-width:620px){.facts{grid-template-columns:1fr;padding:4px 20px}.fact:nth-last-child(2){border-bottom:1px solid rgba(28,43,38,.35)}}
+
+/* Lo que tendrías tú */
+.sec{display:flex;flex-direction:column;gap:22px}
+.yours{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (max-width:720px){.yours{grid-template-columns:1fr}}
+.yours.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:900px){.yours.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.yours.four{grid-template-columns:1fr}}
+.card{all:unset;cursor:pointer;display:flex;flex-direction:column;border-radius:20px;overflow:hidden;background:#fff;border:2px solid var(--peach);transition:border-color .2s}
+.card:hover{border-color:var(--teal)}
+.card:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.card .ph{aspect-ratio:4/3;overflow:hidden;background:var(--peach)}
+.card .ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.card:hover .ph img{transform:scale(1.04)}
+.card .tx{padding:18px 20px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card .tx p{font-size:16px}
+.see{margin-top:auto;padding-top:8px;font-weight:700;font-size:15px;color:var(--teal-dark);display:inline-flex;align-items:center;gap:6px}
+.see svg{width:16px;height:16px}
+
+/* El piso */
+.flat{background:var(--teal);color:var(--ivory);border-radius:20px;padding:36px clamp(20px,4vw,40px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:center}
+.flat h2{color:var(--ivory)}
+.flat .label{color:var(--ivory);opacity:.85}
+.flat ul{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column}
+.flat li{padding:12px 0;border-top:1px solid rgba(255,252,247,.35);display:flex;flex-direction:column}
+.flat li b{font-family:var(--display);font-weight:500;font-size:20px}
+.flat li span{font-size:15px;opacity:.9}
+.flat .pic{all:unset;cursor:zoom-in;border-radius:14px;overflow:hidden;aspect-ratio:3/4;max-width:100%}
+.flat .pic img{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width:720px){.flat{grid-template-columns:1fr}.flat .pic{aspect-ratio:4/3}}
+
+.all{display:flex}
+.allbtn{all:unset;cursor:pointer;display:flex;align-items:center;gap:20px;width:100%;box-sizing:border-box;background:var(--peach);border-radius:20px;padding:18px 24px;border:2px solid var(--peach);transition:border-color .2s}
+.allbtn:hover{border-color:var(--teal)}
+.allbtn:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.allbtn .stack{display:flex;flex:none}
+.allbtn .stack img{width:64px;height:64px;object-fit:cover;border-radius:12px;border:3px solid var(--ivory);margin-left:-18px}
+.allbtn .stack img:first-child{margin-left:0}
+.allbtn .t{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0}
+.allbtn .t b{font-family:var(--display);font-weight:500;font-size:22px}
+.allbtn .t span{font-size:15px}
+.allbtn > svg{width:24px;height:24px;color:var(--teal-dark);flex:none}
+@media (max-width:480px){.allbtn{gap:14px;padding:16px}.allbtn .stack img{width:48px;height:48px;margin-left:-14px}}
+/* Fotos */
+.album{display:flex;flex-direction:column;gap:28px}
+.zone{display:flex;flex-direction:column;gap:12px}
+.zone-head{display:flex;align-items:baseline;gap:10px}
+.zone-head .n{font-size:14px;color:var(--teal-dark);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:620px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.grid button{all:unset;cursor:zoom-in;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:var(--peach);display:block}
+.grid button.wide{grid-column:span 2}
+.grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease, filter .3s}
+.grid button:hover img{transform:scale(1.04)}
+.grid button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+
+/* Sobre mí y contacto */
+.me{display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px;align-items:start;max-width:720px}
+.me .av{width:64px;height:64px;border-radius:50%;background:var(--teal);color:var(--ivory);font-family:var(--display);font-size:28px;display:flex;align-items:center;justify-content:center}
+.me p{max-width:60ch}
+.contact{background:var(--peach);border-radius:20px;padding:32px clamp(20px,4vw,40px);display:flex;flex-direction:column;gap:18px}
+.contact .row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.wa{display:inline-flex;align-items:center;gap:10px;background:var(--coral);color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:14px 26px;border-radius:10px;min-height:24px}
+.wa svg{width:20px;height:20px}
+.num{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.num span{font-family:var(--display);font-size:24px;color:var(--night);user-select:all;font-variant-numeric:tabular-nums}
+.copy{background:transparent;border:2px solid var(--teal-dark);color:var(--teal-dark);font-weight:700;font-size:15px;padding:8px 14px;border-radius:10px;cursor:pointer}
+.small{font-size:15px}
+footer{font-size:14px;color:var(--teal-dark);text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px}
+.utilo{border:2px solid var(--peach);border-radius:20px;padding:24px clamp(20px,4vw,32px);display:flex;flex-direction:column;gap:10px;max-width:720px}
+.utilo h2{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;font-size:22px}
+.utilo h2 .q{font-size:22px}
+.utilo p{font-size:16px;max-width:62ch}
+.utilo a{color:var(--teal-dark);font-weight:700}
+.made{display:inline-flex;align-items:baseline;gap:8px;color:var(--night)}
+.logo{display:inline-flex;align-items:baseline;font-family:var(--display);font-weight:500;font-size:28px;line-height:1;color:var(--teal)}
+.logo svg{width:.559em;height:.56em;margin-left:.02em}
+
+/* Visor de fotos */
+.lb[hidden]{display:none!important}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(20,31,27,.97);display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:14px;
+  padding:max(16px, env(safe-area-inset-top,0px)) max(16px, env(safe-area-inset-right,0px)) max(16px, env(safe-area-inset-bottom,0px)) max(16px, env(safe-area-inset-left,0px))}
+.lb-top{display:flex;justify-content:space-between;align-items:center;gap:12px;max-width:1100px;width:100%;margin:0 auto}
+.lb-top p{color:var(--ivory);font-size:16px;min-width:0}
+.lb-top .c{font-size:14px;opacity:.7;font-variant-numeric:tabular-nums;margin-left:8px}
+.lb-stage{min-height:0;display:flex;align-items:center;justify-content:center}
+.lb-stage img{width:100%;height:100%;max-width:1100px;object-fit:contain;display:block}
+.lb .ctl{display:flex;justify-content:center;gap:12px}
+.lb .ctl button{min-width:88px}
+.lb .ctl button:disabled{opacity:.3;cursor:default}
+.lb-top button{background:rgba(255,252,247,.12);color:var(--ivory);border:0;border-radius:10px;padding:10px 16px;cursor:pointer;font-weight:700;min-height:44px}
+.lb .ctl button{background:rgba(255,252,247,.12);color:var(--ivory);border:0;border-radius:10px;padding:10px 16px;cursor:pointer;font-weight:700;min-width:44px;min-height:44px}
+.lb .ctl button:hover{background:rgba(255,252,247,.22)}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="intro">
+      <p class="label">Sarrià · Barcelona</p>
+      <h1>Habitación con baño privado y <span class="u">terraza</span>, en un piso para dos</h1>
+      <p class="lead">Busco compañero o compañera de piso para empezar el 1 de enero, para alrededor de un año.</p>
+    </div>
+    <button class="cover" type="button" data-open="hero" data-group="salon" aria-label="Ampliar foto: Salón con salida a la terraza"><img src="fotos/hero.jpg" alt="Salón con salida a la terraza"></button>
+    <div class="facts">
+      <div class="fact"><span>Precio</span><b>700 € <small>/mes + gastos</small></b></div>
+      <div class="fact"><span>Entrada</span><b>1 de enero</b></div>
+      <div class="fact"><span>Estancia</span><b>~ 1 año</b></div>
+      <div class="fact"><span>En el piso</span><b>2 personas</b></div>
+    </div>
+  </header>
+
+  <section class="sec">
+    <h2>Lo que tendrías tú</h2>
+    <div class="yours">
+      <button class="card" type="button" data-open="r2" data-group="hab">
+        <div class="ph"><img src="fotos/r2.jpg" alt="" loading="lazy"></div>
+        <div class="tx"><h3>Habitación amplia con cama de matrimonio</h3><p>Con ventana exterior.</p><span class="see">Ver 3 fotos <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div>
+      </button>
+      <button class="card" type="button" data-open="b1" data-group="bano">
+        <div class="ph"><img src="fotos/b1.jpg" alt="" loading="lazy"></div>
+        <div class="tx"><h3>Baño privado</h3><p>Completo y con bañera, solo para ti.</p><span class="see">Ver 2 fotos <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div>
+      </button>
+      <button class="card" type="button" data-open="a" data-group="aux">
+        <div class="ph"><img src="fotos/a.jpg" alt="" loading="lazy"></div>
+        <div class="tx"><h3>Cuarto auxiliar con armario</h3><p>Para guardar ropa, maletas o una bici.</p><span class="see">Ver foto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div>
+      </button>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>Zonas comunes</h2>
+    <div class="yours four">
+      <button class="card" type="button" data-open="t1" data-group="terraza">
+        <div class="ph"><img src="fotos/t1.jpg" alt="" loading="lazy"></div>
+        <div class="tx"><h3>Terraza</h3><p>Con mesa para comer fuera y zona de sofá.</p><span class="see">Ver 3 fotos <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div>
+      </button>
+      <button class="card" type="button" data-open="hero" data-group="salonsolo">
+        <div class="ph"><img src="fotos/s1.jpg" alt="" loading="lazy"></div>
+        <div class="tx"><h3>Salón y comedor</h3><p>Amplio y luminoso, con salida a la terraza.</p><span class="see">Ver 3 fotos <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div>
+      </button>
+      <button class="card" type="button" data-open="k" data-group="cocina">
+        <div class="ph"><img src="fotos/k.jpg" alt="" loading="lazy"></div>
+        <div class="tx"><h3>Cocina</h3><p>Horno, microondas y vitrocerámica.</p><span class="see">Ver foto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div>
+      </button>
+      <button class="card" type="button" data-open="h" data-group="recibidor">
+        <div class="ph"><img src="fotos/h.jpg" alt="" loading="lazy"></div>
+        <div class="tx"><h3>Recibidor</h3><p>Entrada con espejo y mueble recibidor.</p><span class="see">Ver foto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div>
+      </button>
+    </div>
+  </section>
+
+  <section class="flat">
+    <div>
+      <p class="label">Zonas comunes</p>
+      <h2>El piso</h2>
+      <ul>
+        <li><b>Terraza con comedor y sofá</b><span>Con salida directa desde el salón</span></li>
+        <li><b>Salón muy amplio y luminoso</b><span>Con comedor y zona de sofá</span></li>
+        <li><b>Aire acondicionado y radiadores</b><span>Fresco en verano y calefacción en invierno</span></li>
+        <li><b>Cocina equipada</b><span>Horno, microondas y vitrocerámica</span></li>
+        <li><b>Sarrià</b><span>Zona tranquila y muy bien comunicada</span></li>
+      </ul>
+    </div>
+    <button class="pic" type="button" data-open="t2" data-group="terraza" aria-label="Ampliar foto: Terraza: rincón con sofá"><img src="fotos/t2.jpg" alt="Terraza: rincón con sofá" loading="lazy"></button>
+  </section>
+
+  <section class="all">
+    <button class="allbtn" type="button" data-open="r2" data-group="todas">
+      <span class="stack" aria-hidden="true"><img src="fotos/t2.jpg" alt=""><img src="fotos/s1.jpg" alt=""><img src="fotos/r2.jpg" alt=""></span>
+      <span class="t"><b>Ver todas las fotos</b><span>14 fotos del piso, una detrás de otra</span></span>
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </button>
+    <div hidden><button type="button" class="" data-k="t1" aria-label="Ampliar foto: Terraza: zona de comedor con toldo"><img src="fotos/t1.jpg" alt="Terraza: zona de comedor con toldo" loading="lazy"></button><button type="button" class="" data-k="t2" aria-label="Ampliar foto: Terraza: rincón con sofá"><img src="fotos/t2.jpg" alt="Terraza: rincón con sofá" loading="lazy"></button><button type="button" class="" data-k="t3" aria-label="Ampliar foto: Vistas desde la terraza"><img src="fotos/t3.jpg" alt="Vistas desde la terraza" loading="lazy"></button><button type="button" class="" data-k="hero" aria-label="Ampliar foto: Salón con salida a la terraza"><img src="fotos/hero.jpg" alt="Salón con salida a la terraza" loading="lazy"></button><button type="button" class="" data-k="s1" aria-label="Ampliar foto: Salón y comedor"><img src="fotos/s1.jpg" alt="Salón y comedor" loading="lazy"></button><button type="button" class="" data-k="s2" aria-label="Ampliar foto: Salón con la cocina al fondo"><img src="fotos/s2.jpg" alt="Salón con la cocina al fondo" loading="lazy"></button><button type="button" class="" data-k="k" aria-label="Ampliar foto: Cocina equipada"><img src="fotos/k.jpg" alt="Cocina equipada" loading="lazy"></button><button type="button" class="wide" data-k="h" aria-label="Ampliar foto: Recibidor"><img src="fotos/h.jpg" alt="Recibidor" loading="lazy"></button><button type="button" class="" data-k="r2" aria-label="Ampliar foto: Tu habitación, con cama de matrimonio"><img src="fotos/r2.jpg" alt="Tu habitación, con cama de matrimonio" loading="lazy"></button><button type="button" class="" data-k="r3" aria-label="Ampliar foto: Tu habitación: cómoda y ventana"><img src="fotos/r3.jpg" alt="Tu habitación: cómoda y ventana" loading="lazy"></button><button type="button" class="" data-k="r" aria-label="Ampliar foto: Tu habitación, con ventana exterior"><img src="fotos/r.jpg" alt="Tu habitación, con ventana exterior" loading="lazy"></button><button type="button" class="" data-k="b1" aria-label="Ampliar foto: Tu baño privado"><img src="fotos/b1.jpg" alt="Tu baño privado" loading="lazy"></button><button type="button" class="" data-k="b2" aria-label="Ampliar foto: Baño privado, con bañera"><img src="fotos/b2.jpg" alt="Baño privado, con bañera" loading="lazy"></button><button type="button" class="" data-k="a" aria-label="Ampliar foto: Cuarto auxiliar con armario"><img src="fotos/a.jpg" alt="Cuarto auxiliar con armario" loading="lazy"></button></div>
+  </section>
+
+  <section class="sec">
+    <div class="me">
+      <div class="av" aria-hidden="true">J</div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <h2>Sobre mí</h2>
+        <p>Soy Javi, tengo 29 años y trabajo como ingeniero de datos. Soy muy limpio y ordenado, y busco a alguien parecido: responsable, que cuide la casa y con quien convivir de forma tranquila y cordial.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <h2>¿Te encaja?</h2>
+    <p>Escríbeme por WhatsApp contándome un poco sobre ti (a qué te dedicas y qué buscas) y quedamos para que veas el piso.</p>
+    <div class="row"><a class="wa" href="https://wa.me/34659296644?text=Hola%20Javi%2C%20he%20visto%20el%20anuncio%20de%20la%20habitaci%C3%B3n%20en%20Sarri%C3%A0" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>Escribir por WhatsApp</a>
+<div class="num"><span id="ph">659 29 66 44</span><button class="copy" id="copy" type="button" data-t="+34659296644">Copiar número</button></div></div>
+    <p class="small">Si no es para ti pero conoces a alguien, pásale este enlace. Se agradece mucho.</p>
+  </section>
+
+  <section class="utilo" aria-labelledby="titulo-utilo">
+    <h2 id="titulo-utilo"><span class="logo" role="img" aria-label="utilo"><span>util</span><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="1.5" y="1.5" width="17" height="17" rx="8.5" fill="none" stroke="#FF5A3C" stroke-width="3"></rect><circle cx="10" cy="10" r="3" fill="#FF5A3C"></circle></svg></span> <span class="q">Qué es Utilo</span></h2>
+    <p>Utilo prepara herramientas sencillas para pequeños comercios y negocios del barrio, para que pierdan menos tiempo en organizarse: reservas, turnos del equipo, pedidos o avisos por WhatsApp, cada cosa hecha a la medida del negocio.</p>
+    <p>Esta página es un ejemplo: clara, rápida y pensada para verse bien desde el móvil. Si conoces algún negocio al que le vendría bien algo así, escríbenos a <a href="mailto:utilo.digital@gmail.com">utilo.digital@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    <p>La dirección exacta se da al quedar para la visita.</p>
+    <p class="made">Web hecha por <span class="logo" role="img" aria-label="utilo"><span>util</span><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="1.5" y="1.5" width="17" height="17" rx="8.5" fill="none" stroke="#FF5A3C" stroke-width="3"></rect><circle cx="10" cy="10" r="3" fill="#FF5A3C"></circle></svg></span></p>
+  </footer>
+</div>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Fotos del piso">
+  <div class="lb-top"><p><span id="lbcap"></span> <span class="c" id="lbn"></span></p><button id="close" type="button">Cerrar</button></div>
+  <div class="lb-stage"><img id="lbimg" alt=""></div>
+  <div class="ctl">
+    <button id="prev" type="button" aria-label="Foto anterior">←</button>
+    <button id="next" type="button" aria-label="Foto siguiente">→</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  var groups={terraza:['t1','t2','t3'],salon:['hero','s1','s2','k','h'],hab:['r2','r3','r'],bano:['b1','b2'],aux:['a'],salonsolo:['hero','s1','s2'],cocina:['k'],recibidor:['h'],zona:['r2','r3','r','b1','b2','a'],todas:['r2','r3','r','b1','b2','a','t1','t2','t3','hero','s1','s2','k','h']};
+  var order=[];
+  var lb=document.getElementById('lb'),img=document.getElementById('lbimg'),cap=document.getElementById('lbcap'),cnt=document.getElementById('lbn'),cur=0,last=null;
+  function srcOf(k){var el=document.querySelector('[data-k="'+k+'"] img');return el}
+  var pv=document.getElementById('prev'),nx=document.getElementById('next');
+  function show(n){if(n<0||n>=order.length)return;cur=n;var el=srcOf(order[cur]);img.src=el.src;img.alt=el.alt;cap.textContent=el.alt;cnt.textContent=(cur+1)+' / '+order.length;pv.disabled=cur===0;nx.disabled=cur===order.length-1;document.querySelector('.lb .ctl').hidden=order.length<2}
+  function open(k,g){last=document.activeElement;order=groups[g]||[k];show(Math.max(0,order.indexOf(k)));lb.hidden=false;document.getElementById('close').focus()}
+  function close(){lb.hidden=true;if(last)last.focus()}
+  document.querySelectorAll('[data-open],[data-k]').forEach(function(el){el.addEventListener('click',function(){var z=el.closest('[data-zone]');open(el.dataset.open||el.dataset.k,el.dataset.group||(z&&z.dataset.zone))})});
+  pv.onclick=function(){show(cur-1)};
+  nx.onclick=function(){show(cur+1)};
+  document.getElementById('close').onclick=close;
+  lb.addEventListener('click',function(e){if(e.target===lb||e.target.classList.contains('lb-stage'))close()});
+  document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowRight')show(cur+1);if(e.key==='ArrowLeft')show(cur-1)});
+  var x0=null;lb.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  lb.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>50)show(cur+(dx<0?1:-1));x0=null});
+  var cp=document.getElementById('copy');
+  if(cp)cp.addEventListener('click',function(){
+    function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('ph'));var s=getSelection();s.removeAllRanges();s.addRange(r);cp.textContent='Número seleccionado'}
+    try{navigator.clipboard.writeText(cp.dataset.t).then(function(){cp.textContent='Copiado'},sel)}catch(e){sel()}
+  });
+})();
+</script>
+
+</body>
+</html>
