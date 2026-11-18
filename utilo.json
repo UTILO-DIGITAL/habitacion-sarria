@@ -1,0 +1,7 @@
+{
+  "nombre": "Habitación Sarrià",
+  "publicar": [
+    { "rutas": ["README.md", "**/*.md", ".github/"], "como": "nada" },
+    { "rutas": ["**"], "como": "pages", "donde": "el anuncio de la habitación" }
+  ]
+}
